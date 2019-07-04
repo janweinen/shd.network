@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ site.title }}</title>
+		<meta name="keywords" content="the division 2, tom clancy, ubisoft, massive, news">
+		<meta name="description" content="{{ site.description }}">
+		<meta name="robots" content="index,follow">
+		<meta name="revisit-after" content="7 days">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="assets/images/site/favicon.png">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/MyFontsWebfontsKit.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/home.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138485903-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-138485903-1');
+		</script>
+		<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+	</head>
+	<body>
+		<!--[if IE]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+		<a class="cookie-info" href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank"><span rel="tooltip">By continuing to visit this site you agree to our use of cookies.</span>🍪</a>
+		<main>
+			<header>
+				<img class="logo" src="assets/images/site/logo.gif">
+				<h1>STRATEGIC HOMELAND DIVISION</h1>
+				<p class="regular">SHD - EYES ONLY</p>
+			</header>
+			<section>
+				<ul class="container" data-infinite-scroll='{"path": ".pagination__next", "append": ".post", "history": false}'>
+					{% for post in paginator.posts %}
+						<li class="post">
+							<article>
+								<h1 class="post-item--title">{{ post.title }}</h1>
+								<time datetime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+								<div class="post-item--categories">{{ post.categories }}</div>
+								{{ post.content }}
+							</article>
+						</li>
+					{% endfor %}
+				</ul>
+			</section>
+			{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path }}" class="pagination__next"></a>
+			{% endif %}
+			<footer>
+				<div class="footer-links">
+					<a href="https://jekyllrb.com/">made with jekyll</a> | <a href="https://github.com">hosted by github</a>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>

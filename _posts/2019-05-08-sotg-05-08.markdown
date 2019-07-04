@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "STATE OF THE GAME RECAP"
+date:   2019-05-08 08:00:00 +0200
+categories: sotg
+customURL: /
+---
+This week's State of the Game livestream for The Division 2 covered the changes coming in title update 3.
+<img class="post-image" src="/assets/images/posts/sotg.jpg">
+
+As soon as the official recap goes live we'll link it here – but most importantly the heavily awaited title update 3 is coming next week. And the raid will follow shortly after to give players time to adjust their builds to the upcoming update.
+
+A few bullet points from the patch notes:
+* Gear score increase will not come with TU3  
+* Contaminated gear now will always drop on 500 if the player has reached 500  
+* Stronghold Bosses, Heroic Mission Bosses, Control Point level 4 Bosses will also drop 500 gearscore items if the player has reached 500  

@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "STATE OF THE GAME"
+date:   2019-04-24 14:00:00 +0200
+categories: service
+customURL: https://news.ubisoft.com/en-us/article/348889/the-division-2-state-of-the-game-recap-score-drops-recalibration-mods-and-blueprints-4-24
+---
+This week's State of the Game livestream for The Division 2 covered the Public Test Server, recalibration, gear score updates, mods, and blueprints, and more! [Get the full recap here](https://news.ubisoft.com/en-us/article/348889/the-division-2-state-of-the-game-recap-score-drops-recalibration-mods-and-blueprints-4-24).
+<img class="post-image" src="/assets/images/posts/sotg.jpg">
